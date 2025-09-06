@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calcolatore PAC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calcolatore PAC</h1>
+
+    <form id="Pac">
+      <label>
+        Capitale iniziale (€):
+        <input type="number" id="capIniziale" required />
+      </label>
+
+      <label>
+        Contributo mensile (€):
+        <input type="number" id="capMensile" required />
+      </label>
+
+      <label>
+        Rendimento annuo (%):
+        <input type="number" step="0.01" id="capAnno" required />
+      </label>
+
+      <label>
+        Orizzonte temporale (anni):
+        <input type="number" id="Ann" placeholder="Es. 10" />
+      </label>
+
+      <label>
+        Oppure obiettivo (€):
+        <input type="number" id="Obb" placeholder="Es. 100000" />
+      </label>
+
+      <button type="submit">Calcola</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
